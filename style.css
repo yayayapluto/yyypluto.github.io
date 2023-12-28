@@ -13,12 +13,11 @@ a, button {
 }
 
 .logo{
-    width: 30px;
     height: 30px;
 }
 
 .logo p{
-    cursor: crosshair;
+    cursor: pointer;
     font-size: 25px;
     font-family: 'Mulish', cursive;
     color: #d1dbe4;
@@ -37,6 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
 
 .navbar .right-row{
@@ -146,7 +146,7 @@ nav {
 .desc-hero p{
     line-height: 22px;
     letter-spacing: 1.5px;
-    text-align: justify;
+    text-align: left;
     font-family: "Mulish";
     font-size: 25px;
 }
@@ -222,7 +222,7 @@ nav {
 .card-skill {
     background-color: #04090c;
     width: 200px;
-    height: 250px;
+    height: auto;
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
@@ -349,6 +349,21 @@ nav {
 }
 
 @media only screen and (max-width: 1000px){
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo p{
+        cursor: pointer;
+        align-items: start;
+        justify-content: left;
+        font-size: 25px;
+        font-family: 'Mulish', cursive;
+        color: #d1dbe4;
+    }
+
     .about{
         padding: 50px;
         box-sizing: border-box;
